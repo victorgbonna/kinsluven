@@ -1,0 +1,332 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+}
+ul{
+    list-style-type: none;
+}
+.area{
+    max-width: inherit;
+    /* background: lightcoral; */
+}
+.first{
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+.first p, a{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+nav{
+    background-image: url('../img/nav.jpg');
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+nav ul{
+    align-self: center;
+    display: flex;
+    font-size:1em;
+    /* background: darkmagenta; */
+}
+
+nav ul li{
+    margin-right: 25px;
+}
+
+.img{
+    margin: 0;
+    padding: 0;
+    box-shadow: 6px 3px 50px 2px gray;
+    /* margin-left: 100px;     */
+}
+
+.img img{
+    width:1330px; 
+    height:650px;
+}
+
+
+.contents{
+    margin: 0 10%;
+}
+.welcome-page{
+    text-align: center;
+}
+.what-we{
+    margin-bottom: 100px;
+}
+.what-we-make{
+    display: flex;
+    flex-wrap: wrap;
+}
+.what-we-make a{
+    min-width: 50%;
+    flex-basis: 50%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.what-we-make a div img{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transform-origin: 50% 65%;
+    transition: transform 0.5s ease-in;
+}
+.what-we-make a div p{
+    position: absolute;
+    bottom: 15%;
+    background: rgba(130, 219, 130, 0.299);
+    width: 72%;
+    padding: 10px;
+    color: black;
+    border: none;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.what-we-make a :hover img{
+    transform: scale(1.1);
+}
+.what-we p a{
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 15px;
+    width: 20%;
+    color: white;
+    background: green;
+    /* box-shadow: 2px 3px 2px 2px rgb(149, 155, 149); */
+}
+
+.testimonials{
+    display: flex;
+    margin-bottom: 30px;
+}
+.testimonials div:hover{
+    border: none;
+}
+.testimonials div{
+    cursor: pointer;
+    flex-basis: 30%;
+    margin-right: 20px;
+    text-align: center;
+    border: 2px lightgreen solid;
+    padding: 1%;
+}
+.testimonials .testimony{
+    font-weight: lighter;
+    font-style: italic;
+    color: gray;    
+}
+.testimonials .client-name{
+    font-weight: bolder;
+}
+
+footer{
+    border-top: 2px rgb(163, 185, 163) solid;
+    box-shadow: 6px 3px 50px 2px gray;
+    background-image: url('../img/nav.jpg');
+    padding: 20px;
+}
+footer .footer-list{
+    display: flex;
+    justify-content: space-around;
+    /* background: red; */
+}
+.footer-list div{
+    flex-basis: 30%;
+    max-width: 30%;
+}
+.footer-list ul li{
+    /* background: blueviolet; */
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    line-height: 20px;    
+}
+.footer-list ul{
+    /* background: violet; */
+    padding-left: 0;
+    
+}
+.footer-list div>p{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(5, 39, 5);
+}
+
+.footer-about{
+    width: 50%;
+    font-weight: normal !important;
+    font-size: 15px !important;
+}
+
+/* GALLERY */
+.what-we .ironing-boards, .what-we .baby-care, .what-we .camp-bed, .what-we .folding-seats{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.what-we .ironing-boards div, .what-we .baby-care div, .what-we .camp-bed div, .what-we .folding-seats div{
+    flex-basis: 30%;
+    max-width: 30%;
+    margin-bottom: 25px;
+    margin-right: 20px;
+}
+.what-we .ironing-boards div img, .what-we .baby-care div img, .what-we .camp-bed div img, .what-we .folding-seats div img{
+    width: 300px;
+    height: 300px;
+}
+@media(max-width:500px){
+    .area{
+        overflow: hidden;
+        /* background: #374355; */
+    }
+    .first{
+        display: none;
+    }
+    nav{
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    nav>a{
+        margin-left: 23%;
+    }
+    nav a img{
+        width: 60% !important;
+        margin-bottom: 20px;
+    }
+    nav ul{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /* background: coral; */
+        justify-content: center;
+        font-size:1em;
+        /* background: darkmagenta; */
+    }
+    
+    nav ul li{
+        margin-right: 15px;
+    }
+
+    .img img{
+        width: 100%;
+        height: 350px;
+    }
+    .contents{
+        margin: 0 2%;
+    }
+    .welcome-page{
+        text-align: center;
+    }
+    .welcome-page :first-child{
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+    .what-we{
+        margin-bottom: 100px;
+    }
+    .what-we-make{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .what-we-make a{
+        margin-left: 15px;
+        min-width: 80%;
+        flex-basis: 80%;
+    }
+    .what-we-make a div img{
+        width: 300px;
+        height: 300px;
+    }
+    .what-we-make a div p{
+        width: 300px;
+  
+    }
+
+    .what-we p a{
+        display: block;
+        border-radius: 5px;
+        text-align: center;
+        /* padding: 30px; */
+        margin-left: 45%;
+        font-size: 17px;
+        width: 50%;
+        /* box-shadow: 2px 3px 2px 2px rgb(149, 155, 149); */
+    }
+    
+    .testimonials{
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .testimonials div{
+        flex-basis: 80%;
+        min-width: 80%;
+    }
+    footer{
+        border-top: 2px rgb(163, 185, 163) solid;
+        box-shadow: 6px 3px 50px 2px gray;
+        background-image: url('../img/nav.jpg');
+        padding: 20px;
+    }
+    footer .footer-list{
+        display: block;
+        text-align: center;
+     /* background: red; */
+    }
+    .footer-list div{
+        flex-basis: 100%;
+        min-width: 100%;
+    }
+    .footer-list ul li{
+        /* background: blueviolet; */
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        line-height: 20px;    
+    }
+    .footer-list ul{
+        /* background: violet; */
+        padding-left: 0;
+        
+    }
+    .footer-list div>p{
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(5, 39, 5);
+    }
+    .footer-about{
+        width: 100%;
+    }
+    .what-we .ironing-boards, .what-we .baby-care, .what-we .camp-bed, .what-we .folding-seats{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+    .what-we .ironing-boards div, .what-we .baby-care div, .what-we .camp-bed div, .what-we .folding-seats div{
+        flex-basis: 45%;
+        max-width: 45%;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    .what-we .ironing-boards div img, .what-we .baby-care div img, .what-we .camp-bed div img, .what-we .folding-seats div img{
+        width: 150px;
+        height: 150px;
+    }
+}
