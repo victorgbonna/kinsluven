@@ -18,6 +18,7 @@ ul{
 }
 .area{
     max-width: inherit;
+    overflow-x: hidden;
     /* background: lightcoral; */
 }
 .first{
@@ -61,7 +62,7 @@ nav ul li{
 }
 
 .img img{
-    width:1330px; 
+    width:100vw; 
     height:650px;
 }
 
